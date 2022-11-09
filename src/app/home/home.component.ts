@@ -19,7 +19,7 @@ export class HomeComponent implements OnInit {
   }
   getTrendingMovies() {
     this.http
-      .get('http://localhost:4200/assets/data/trending-movies.json')
+      .get('./assets/data/trending-movies.json')
       .subscribe((movies) => {
         this.trendingMovies = movies;
 
