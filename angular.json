@@ -101,6 +101,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "rotten-potatoes:build:production",
+            "firebaseProject": "rotten-pot",
+            "firebaseHostingSite": "rotten-pot"
+          }
         }
       }
     }
