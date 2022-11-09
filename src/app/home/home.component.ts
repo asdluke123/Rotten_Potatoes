@@ -27,7 +27,7 @@ export class HomeComponent implements OnInit {
   }
   getTheatreMovies() {
     this.http
-      .get('http://localhost:4200/assets/data/theatre-movies.json')
+      .get('./assets/data/theatre-movies.json')
       .subscribe((movies) => {
         this.theatreMovies = movies;
 
@@ -35,7 +35,7 @@ export class HomeComponent implements OnInit {
   }
   getPopularMovies() {
     this.http
-      .get('http://localhost:4200/assets/data/popular-movies.json')
+      .get('./assets/data/popular-movies.json')
       .subscribe((movies) => {
         this.popularMovies = movies;
       });
